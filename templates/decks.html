@@ -14,7 +14,7 @@
             <nav>
 
                         <a href="{{ url_for('index') }}"> Home</a>
-                        <a href="{{ url_for('decks') }}"> Dekcs</a>
+                        <a href="{{ url_for('decks') }}"> Decks</a>
                         <a href="{{ url_for('schedule') }}">Schedule</a>
                         <a href="{{ url_for('settings') }}">Settings</a>
 
@@ -45,9 +45,31 @@
           </form>
           
         <ul>
-            <li>Here is where the decks will go</li><br>
-            <li>And this is what they will look like</li><br>
-            <li>And you can click to filter them</li><br>
+            <li class="decks">This is deck1 <div class="circle_container">
+                <div class="circle_main">
+                    <div class="circle_text_container">
+                        <div class = "circle_text">
+                            100%
+                        </div>
+                    </div>
+                </div></li><br>
+            <li class="decks">This is deck2 <div class="circle_container">
+                <div class="circle_main">
+                    <div class="circle_text_container">
+                        <div class = "circle_text">
+                            100%
+                        </div>
+                    </div>
+                </div></li><br>
+            <li class="decks">This is deck 3 <div class="circle_container">
+                <div class="circle_main">
+                    <div class="circle_text_container">
+                        <div class = "circle_text">
+                            100%
+                        </div>
+                    </div>
+                </div>
+            </div></li><br>
         </ul>
 
 
