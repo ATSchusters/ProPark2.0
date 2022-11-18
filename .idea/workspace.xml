@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8fdc19f-02ce-4ced-8eea-a84e35541af0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f8fdc19f-02ce-4ced-8eea-a84e35541af0" name="Default Changelist" comment="for HTML templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +23,22 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="2HhNVsF5Qm9m4ILaueXG2rJg9PU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.hello (1)">
+  <component name="RunManager" selected="Python.app">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,7 +60,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hello (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Red Wraith\Documents\GitHub\ProPark2.0\app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hello (1)" />
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.hello" />
       </list>
     </recent_temporary>
@@ -115,13 +120,30 @@
       <option name="presentableId" value="Default" />
       <updated>1668733381817</updated>
     </task>
+    <task id="LOCAL-00001" summary="for HTML templates">
+      <created>1668735683526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668735683526</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="for HTML templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="for HTML templates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1668733546967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="570" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668733546967" />
+    <state x="1105" y="121" key="CommitChangelistDialog2" timestamp="1668736675798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1105" y="121" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668736675798" />
     <state width="936" height="281" key="GridCell.Tab.0.bottom" timestamp="1668735091574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -142,9 +164,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="926" y="168" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668733537190" />
-    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668734828353">
+    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668736678269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668734828353" />
+    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668736678269" />
   </component>
 </project>
