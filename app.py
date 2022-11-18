@@ -37,7 +37,5 @@ def show_decks():
                 return render_template("decks.html", decks=all_decks)
 
 
-
-
 if __name__ == "__main__":
     app.run()
