@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8fdc19f-02ce-4ced-8eea-a84e35541af0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,9 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="62" y="119" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668743679937" />
-    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1668738211020">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="918" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1668748210457">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="918" y="275" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1668748210457" />
     <state x="1148" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668738211020" />
     <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668743682929">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -3,24 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>UNCC ProPark</title>
+	<style>
+
+button {
+       background-color: #298136;
+       width: 100%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+}
+
+html {
+  background-image: url('background.jpg');
+  background-size: cover;
+}
+
+
+
+input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+}
+
+button:hover {
+        opacity: 0.7;
+}
+
+.register {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+}
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.aligncenter {
+    text-align: center;
+    padding: 75px;
+}
+
+</style>
 </head>
 <body>
 <div>
+<header>
+			<!--<h1 class="aligncenter">Welcome!</h1>-->
+</header>
+</div>
+<p class="aligncenter">
+    <img src="logo.png" alt="UNCC PropPark" width="350" height="250"/>
+</p>
 
-</div>
-<div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder=""> <br><br>
-</div>
+	<form>
+        <div class="container">
 
-<div>
-    <label for="password">Password:</label>
-    <input type="text" id="password" name="password" placeholder=""> <br><br>
-</div>
+            <input type="text" placeholder="Enter Username" name="username" required>
 
-<div>
-    <button type="button">Login</button>
-</div>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+            <button onclick="window.location.href = '#'" type="button" class="register"> Register</button>
+
+        </div>
+    </form>
+
 
 </body>
 </html>
