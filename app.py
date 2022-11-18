@@ -18,5 +18,5 @@ app = Flask(__name__)
 def login():
         return render_template("login.html")
 
-def login():
-    return
+if __name__ == "__main__":
+    app.run()
