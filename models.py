@@ -6,12 +6,14 @@ class User(db.Model):
     first_name = db.Column('first_name', db.String(20))
     last_name = db.Column('last_name', db.String(20))
     email = db.Column('email', db.String(30))
+    passtype = db.Column('passtype', db.String(15))
 
-    def __init__(self, password, first_name, last_name, email):
+    def __init__(self, password, first_name, last_name, email, passtype):
         self.password = password
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
+        self.passtype = passtype
     
 class Event(db.Model):
     id = db.Column ('id', db.Integer, primary_key=True)
