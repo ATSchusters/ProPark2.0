@@ -15,9 +15,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 with app.app_context():
-        db.create_all
+        db.create_all()
 
 @app.route('/')
+def index():
+        return render_template("index.html")
 
 
 @app.route('/login', methods=['GET'])
@@ -50,6 +52,9 @@ def sort_decks_by_location():
 def display_schedule():
         return render_template("schedule.html")
 
+@app.route('/settings', methods=['GET'])
+def display_settings():
+        return render_template("settings.html")
 
 
 if __name__ == "__main__":

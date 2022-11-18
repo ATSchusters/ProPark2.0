@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fdc19f-02ce-4ced-8eea-a84e35541af0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webscrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webscrap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,7 +40,75 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.database">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Red Wraith\Documents\GitHub\ProPark2.0" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="Scratch (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capstone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Red Wraith\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capstone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Red Wraith\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/static" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Red Wraith\Documents\GitHub\ProPark2.0\Scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Webscrap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capstone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Red Wraith\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Webscrap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,7 +142,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Red Wraith\Documents\GitHub\ProPark2.0\app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,28 +163,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Capstone" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Red Wraith\AppData\Local\Programs\Python\Python38\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Red Wraith\Desktop\Capstone\hello.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,9 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.database" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Webscrap" />
+        <item itemvalue="Python.Scratch (1)" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.hello" />
+        <item itemvalue="Python.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +221,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668741437089</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="venv">
+      <created>1668743699674</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668743699674</updated>
+    </task>
+    <task id="LOCAL-00006" summary="data adding">
+      <created>1668751771450</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668751771450</updated>
+    </task>
+    <task id="LOCAL-00007" summary="web scrapping">
+      <created>1668786243233</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668786243233</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,49 +250,59 @@
     <MESSAGE value="for HTML templates" />
     <MESSAGE value="venv change" />
     <MESSAGE value="login" />
-    <option name="LAST_COMMIT_MESSAGE" value="login" />
+    <MESSAGE value="venv" />
+    <MESSAGE value="data adding" />
+    <MESSAGE value="web scrapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="web scrapping" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1668733546967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="570" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668733546967" />
-    <state x="1105" y="121" key="CommitChangelistDialog2" timestamp="1668741436677">
+    <state x="1105" y="121" key="CommitChangelistDialog2" timestamp="1668786242662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1105" y="121" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668741436677" />
+    <state x="1105" y="121" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668786242662" />
     <state x="1202" y="280" key="FileChooserDialogImpl" timestamp="1668739122844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1202" y="280" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668739122844" />
-    <state width="936" height="278" key="GridCell.Tab.0.bottom" timestamp="1668740578289">
+    <state width="1040" height="329" key="GridCell.Tab.0.bottom" timestamp="1668791527775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668740578289" />
-    <state width="936" height="278" key="GridCell.Tab.0.center" timestamp="1668740578289">
+    <state width="1040" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791527775" />
+    <state width="1040" height="329" key="GridCell.Tab.0.center" timestamp="1668791527775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668740578289" />
-    <state width="936" height="278" key="GridCell.Tab.0.left" timestamp="1668740578288">
+    <state width="1040" height="329" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791527775" />
+    <state width="1040" height="329" key="GridCell.Tab.0.left" timestamp="1668791527775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668740578288" />
-    <state width="936" height="278" key="GridCell.Tab.0.right" timestamp="1668740578289">
+    <state width="1040" height="329" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791527775" />
+    <state width="1040" height="329" key="GridCell.Tab.0.right" timestamp="1668791527775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668740578289" />
-    <state x="62" y="119" key="SettingsEditor" timestamp="1668743679937">
+    <state width="1040" height="329" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791527775" />
+    <state x="112" y="258" key="IDE.errors.dialog" timestamp="1668785964075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="62" y="119" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668743679937" />
-    <state x="918" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1668748210457">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="918" y="275" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1668748210457" />
-    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668738211020" />
-    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668743682929">
+    <state x="112" y="258" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668785964075" />
+    <state x="62" y="119" key="SettingsEditor" timestamp="1668791704516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668743682929" />
+    <state x="62" y="119" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791704516" />
+    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1668779137442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1148" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668779137442" />
+    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668791965968">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791965968" />
+    <state x="1034" y="0" width="892" height="669" key="dock-window-1" timestamp="1668785862584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1034" y="0" width="892" height="669" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668785862584" />
   </component>
 </project>
