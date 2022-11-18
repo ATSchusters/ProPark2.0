@@ -24,6 +24,11 @@ with app.app_context():
 def login():
         return render_template("login.html")
 
+@app.route('/register', methods=['GET'])
+def register():
+        #need a lot more logic here
+        return render_template("register.html")
+
 
 #Route to display all decks with no filter to the user
 @app.route('/decks/', methods=['GET'])
@@ -40,6 +45,12 @@ def show_decks():
 @app.route('/decks/<location>')
 def sort_decks_by_location():
         return render_template("index.html")
+
+@app.route('/schedule', methods=['GET'])
+def display_schedule():
+        return render_template("schedule.html")
+
+
 
 if __name__ == "__main__":
     app.run()
