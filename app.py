@@ -50,6 +50,9 @@ def sort_decks_by_location():
 def display_schedule():
         return render_template("schedule.html")
 
+@app.route('/settings', methods=['GET'])
+def display_settings():
+        return render_template("settings.html")
 
 
 if __name__ == "__main__":

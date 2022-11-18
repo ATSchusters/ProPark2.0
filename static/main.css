@@ -59,7 +59,7 @@ body{
 
 }
 
-/* Circle Main draws the actual circle */
+/* Circle Main draws the actual circle for percentage */
 .circle_main
 {
 	width : 90%;
@@ -99,3 +99,12 @@ body{
 	top : 50%;
 	transform : translateY(-50%);
 }
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #005035;
+    color: white;
+    text-align: center;
+  }
