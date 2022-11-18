@@ -7,4 +7,4 @@ dateTimeObj = datetime.now()
 client = ScrapingAntClient(token='5ba5214582d74c76b36dadb919cb5057')
 # Scrape the parking site.
 result = client.general_request('https://parkingavailability.charlotte.edu/')
-
+print(result.content)

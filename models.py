@@ -33,17 +33,17 @@ class Event(db.Model):
 
 class Deck(db.Model):
     id = db.Column('id', db.Integer, primary_key=True)
-    name = db.Column('name', db.String(30))
     coord_x = db.Column('coord_x', db.Float)
     coord_y = db.Column('coord_y', db.Float)
+    name = db.Column('name', db.String(30))
     commuter = db.Column('commuter', db.Boolean)
     resident = db.Column('resident', db.Boolean)
     staff = db.Column('staff', db.Boolean)
 
-    def __init__(self, name, coord_x, coord_y, commuter, resident, staff):
-        self.name = name
+    def __init__(self, coord_x, coord_y, name, commuter, resident, staff):
         self.coord_x = coord_x
         self.coord_y = coord_y
+        self.name = name
         self.commuter = commuter
         self.resident = resident
         self.staff = staff
