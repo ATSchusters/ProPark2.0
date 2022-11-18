@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="UNCC ProPark">
+        <title>UNCC ProPark</title>
+        <!-- styles -->
+         <link rel="stylesheet" href='/static/main.css'>
+
+    </head>
+    <body>
+       <div class="topnav">
+            <nav>
+
+                        <a href="{{ url_for('index') }}"> Home</a>
+                        <a href="{{ url_for('decks') }}"> Dekcs</a>
+                        <a href="{{ url_for('schedule') }}">Schedule</a>
+                        <a href="{{ url_for('settings') }}">Settings</a>
+
+                  <!-- {% if user %}-->
+
+                        <a class="split" href="{{ url_for('logout')}}">Logout</a>
+
+                  <!--  {% else %}-->
+
+                        <a class="split" href="{{ url_for('login') }}">Sign In</a>
+                        <a class="split" href="{{ url_for('register') }}">Register</a>
+                  <!--  {% endif %}-->
+            </nav>
+        </div>
+        <h1>Hello {{user}}, welcome to UNCC ProPark. See the deck choices below</h1>
+        {% if decks %}
+        {% for event in events %}
+        <br><br>
+        <form class="filter" action="/action_page.php">
+            <label for="filter">Choose an option</label>
+            <select name="filter" id="filter">
+              <option value="classic">Closest</option>
+              <option value="favorite">Favorite</option>
+              <option value="most empty">Most Empty</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+          
+        <ul>
+            <li>Here is where the decks will go</li><br>
+            <li>And this is what they will look like</li><br>
+            <li>And you can click to filter them</li><br>
+        </ul>
+
+
