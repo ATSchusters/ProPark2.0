@@ -28,14 +28,18 @@ def login():
 #Route to display all decks with no filter to the user
 @app.route('/decks/', methods=['GET'])
 def show_decks():
-
-        all_decks= db.session.query(Deck).all()
-
+        
         if session.get('user'):
-                return render_template("decks.html", decks=all_decks, user=session['user'])
+                display_decks= db.session.query(Deck).all()
+                return render_template("decks.html", decks=display_decks, user=session['user'])
+                
         else:
-                return render_template("decks.html", decks=all_decks)
+                display_decks= db.session.query(Deck).all()
+                return render_template("decks.html", decks=display_decks)
 
+@app.route('/decks/<location>')
+def sort_decks_by_location():
+        return render_template("index.html")
 
 if __name__ == "__main__":
     app.run()
