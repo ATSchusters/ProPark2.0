@@ -32,7 +32,10 @@ def show_decks():
         all_decks= db.session.query(Deck).all()
 
         if session.get('user'):
-        
+                return render_template("decks.html", decks=all_decks, user=session['user'])
+        else:
+                return render_template("decks.html", decks=all_decks)
+
 
 
 
