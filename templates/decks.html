@@ -32,7 +32,11 @@
         </div>
         </header>
         <main>
-        <h1>Hello {{user}}, welcome to UNCC ProPark. See the deck choices below</h1>
+            {%if user %}
+                <h1>Hello {{user}}, welcome to UNCC ProPark. See the deck choices below</h1>
+            {% else %}
+                <h1>Hello, welcome to UNCC ProPark. See the deck choices below</h1>
+            {% endif %}
         
         <br><br>
         <form class="filter" action="/action_page.php">
@@ -47,7 +51,8 @@
           </form>
           
         <ul>
-            <li class="decks">This is deck1 <div class="circle_container">
+            {% for deck in decks %}
+            <li class="decks">{{ deck.name }}<div class="circle_container">
                 <div class="circle_main">
                     <div class="circle_text_container">
                         <div class = "circle_text">
@@ -55,68 +60,7 @@
                         </div>
                     </div>
                 </div></li><br>
-            <li class="decks">This is deck2 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div></li><br>
-            <li class="decks">This is deck3 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div>
-            </div></li><br>
-            <li class="decks">This is deck4 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div>
-            </div></li><br>
-            <li class="decks">This is deck5 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div>
-            </div></li><br>
-            <li class="decks">This is deck6 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div>
-            </div></li><br>
-            <li class="decks">This is deck7 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div>
-            </div></li><br>
-            <li class="decks">This is deck8 <div class="circle_container">
-                <div class="circle_main">
-                    <div class="circle_text_container">
-                        <div class = "circle_text">
-                            100%
-                        </div>
-                    </div>
-                </div>
-            </div></li><br>
+            {% endfor %}
         </ul>
         </main>
         <footer>
