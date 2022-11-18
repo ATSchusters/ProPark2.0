@@ -1,0 +1,9 @@
+coord_x,coord_y,name,commuter,resident,staff
+35.30921329,-80.74347472,CRI Deck, True, True, True
+35.30064595,-80.7361855,South Village Deck, True, True, True
+35.30487995,-80.72756037,East Deck 1, False, False, True
+35.30567648,-80.72648544,East Deck 2/3, True, False, True
+35.30450691,-80.73451612,Cone Deck, False, False, True
+35.30540155,-80.73652955,West Deck, True, False, True
+35.30910354,-80.73523594,Union Deck, True, False, True
+35.31337788,-80.7315279,North Deck, True, True, True
