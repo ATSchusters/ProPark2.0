@@ -77,7 +77,9 @@ button:hover {
             <input type="text" placeholder="Enter Username" name="username" required>
 
             <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
+            <!--Add js to verify login and then allow the user to go to the deck page-->
+            <button type="submit" onclick="window.location.href = 'decks.html'">Login</button>
+            <!--The register page has a place holder of #. Once ready this will take the user to the register page.-->
             <button onclick="window.location.href = '#'" type="button" class="register"> Register</button>
 
         </div>
