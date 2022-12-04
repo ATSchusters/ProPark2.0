@@ -5,6 +5,7 @@ from flask import Flask, redirect, url_for, render_template, request, session
 from database import db
 from models import User as User
 from models import Event as Event
+from models import Building
 from models import Deck as Deck
 
 app = Flask(__name__)

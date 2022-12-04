@@ -1,12 +1,6 @@
-from models import Deck
-import csv
-import database as db
+from models import Building
+from app import db
 
-# inserting the data into the database need to start a session
-
-with open('decksdata.csv', newline="") as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        row['name'] = Deck(name=row['name'], coord_x=row['coord_x'], coord_y=row['coord_y'], commuter=row['commuter'], resident=row['resident'], staff=row['staff'])
-        print(row['name'])
-
+Bio = Building(35.31266195, -80.742022, 'Bioinformatics')
+db.session.add(Bio)
+db.session.commit()

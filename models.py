@@ -47,3 +47,15 @@ class Deck(db.Model):
         self.commuter = commuter
         self.resident = resident
         self.staff = staff
+
+
+class Building(db.Model):
+    id = db.Column('id', db.Integer, primary_key=True)
+    coord_x = db.Column('coord_x', db.Float)
+    coord_y = db.Column('coord_y', db.Float)
+    name = db.Column('name', db.String(30))
+
+    def __init__(self, coord_x, coord_y, name):
+        self.coord_x = coord_x
+        self.coord_y = coord_y
+        self.name = name
