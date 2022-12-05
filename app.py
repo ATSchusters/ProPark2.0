@@ -33,24 +33,61 @@ def register():
 
 
 #Route to display all decks with no filter to the user
-@app.route('/decks/', methods=['GET'])
+@app.route('/decks/', methods=['GET', 'POST'])
 def show_decks():
-        
-        # checks whether or not the user is signed in
-        if session.get('user'):
-                # query and display all decks
-                display_decks= db.session.query(Deck).all()
-                return render_template("decks.html", decks=display_decks, user=session['user'])
 
-        # condidtion where user is not signed in        
+        # if user submits a filter on the decks page
+        if request.method == 'POST':
+                # gather data posted from form on decks.html
+                deck_filter = request.form['filter']
+                deck_passtype = request.form['passtype']
+
+                # redirect user to filtered decks page
+                return redirect(url_for('display_filtered_decks', filter=deck_filter, passtype=deck_passtype))
+
         else:
-                # query and display all decks
+                # retrieves all decks
                 display_decks= db.session.query(Deck).all()
-                return render_template("decks.html", decks=display_decks)
 
-@app.route('/decks/<location>')
-def sort_decks_by_location():
-        return render_template("index.html")
+                # checks whether or not the user is signed in
+                if session.get('user'):
+                        return render_template("decks.html", decks=display_decks, user=session['user'])
+
+                # condidtion where user is not signed in        
+                else:
+                        return render_template("decks.html", decks=display_decks)
+
+# Route to show decks when users have selected a filter and pass type
+@app.route('/decks/<filter>/<passtype>', methods=['GET', 'POST'])
+def display_filtered_decks(filter, passtype):
+
+        # if user submits a filter from form
+        if request.method == 'POST':
+                # recieve form data
+                deck_filter = request.form['filter']
+                deck_passtype = request.form['passtype']
+
+                # restart display_filtered_decks with new filter
+                return redirect(url_for('display_filtered_decks', filter=deck_filter, passtype=deck_passtype))
+        
+        else:
+                # check passtype param and get decks matching it
+                if passtype == "commuter":
+                        filtered_decks = db.session.query(Deck).filter_by(commuter=True)
+                elif passtype == "resident":
+                        filtered_decks = db.session.query(Deck).filter_by(resident=True)
+                elif passtype == 'faculty':
+                        filtered_decks = db.session.query(Deck).filter_by(staff=True)
+                else:
+                        filtered_decks = db.session.query(Deck).all()
+        
+        # if a user is logged in, render decks.html with user and decks
+        if session.get('user'):
+                return render_template('decks.html', decks=filtered_decks, user=session['user'])
+                
+        # if no user is logged in, render decks.html with decks
+        else:
+                return render_template('decks.html', decks=filtered_decks)
 
 @app.route('/schedule', methods=['GET'])
 def display_schedule():

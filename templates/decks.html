@@ -39,7 +39,7 @@
             {% endif %}
         
         <br><br>
-        <form class="filter" action="/action_page.php">
+        <form class="filter" action="{{ url_for('show_decks') }}" method="post">
             <label for="filter">Choose a filter</label>
             <select name="filter" id="filter">
                 <option value="none">None</option>
