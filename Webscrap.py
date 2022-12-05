@@ -1,10 +1,21 @@
-from bs4 import BeautifulSoup
-from scrapingant_client import ScrapingAntClient
-from datetime import datetime
-#to track when the data is scrapped
-dateTimeObj = datetime.now()
-# Limited uses likely not a problem for our use case
-client = ScrapingAntClient(token='5ba5214582d74c76b36dadb919cb5057')
-# Scrape the parking site.
-result = client.general_request('https://parkingavailability.charlotte.edu/')
-print(result.content)
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+
+options = webdriver.ChromeOptions()
+
+options.headless = True
+
+url = 'https://parkingavailability.charlotte.edu/'
+
+driver = webdriver.Chrome(service=ChromeService(
+    ChromeDriverManager().install()), options=options)
+
+driver.get(url)
+
+elements = driver.find_elements(By.TAG_NAME, 'app-percentage')
+
+#for title in elements:
+#    heading = title.find_element(By.CLASS_NAME, 'green ng-star-inserted').text
+#    print(heading)
