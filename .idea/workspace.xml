@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8fdc19f-02ce-4ced-8eea-a84e35541af0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Capstone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Capstone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Webscrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webscrap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -186,7 +189,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -267,5 +270,31 @@
     <MESSAGE value="web scrapping" />
     <MESSAGE value="html fix" />
     <option name="LAST_COMMIT_MESSAGE" value="html fix" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="936" height="328" key="GridCell.Tab.0.bottom" timestamp="1670287100683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="328" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670287100683" />
+    <state width="936" height="328" key="GridCell.Tab.0.center" timestamp="1670287100683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="328" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670287100682" />
+    <state width="936" height="328" key="GridCell.Tab.0.left" timestamp="1670287100682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="328" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670287100682" />
+    <state width="936" height="328" key="GridCell.Tab.0.right" timestamp="1670287100683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="328" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670287100683" />
+    <state x="704" y="163" width="998" height="735" key="SettingsEditor" timestamp="1670284502326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="704" y="163" width="998" height="735" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670284502326" />
+    <state x="908" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1670382834450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="908" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670382834450" />
   </component>
 </project>
