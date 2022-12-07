@@ -17,7 +17,7 @@ button {
 }
 
 html {
-  background-image: url('deck_background.png');
+  background-image: url('static/background.jpg');
   background-size: cover;
 }
 
@@ -25,10 +25,10 @@ input::placeholder {
   font-size: 18px;
 }
 
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password] {
         width: 100%;
         margin: 8px 0;
-        padding: 12px 18px;
+        padding: 12px 20px;
         display: inline-block;
         border: 2px solid green;
         box-sizing: border-box;
@@ -47,7 +47,7 @@ button:hover {
 
 .container {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -56,7 +56,7 @@ button:hover {
 
 .aligncenter {
     text-align: center;
-    padding: 0px;
+    padding: 75px;
 }
 
 </style>
@@ -68,20 +68,38 @@ button:hover {
 </header>
 </div>
 <p class="aligncenter">
-    <img src="logo2.png" alt="UNCC PropPark" width="450" height="450"/>
+    <img src="static/logo.png" alt="UNCC ProPark" width="350" height="250"/>
 </p>
+<h1>Welcome {% if user %}{{user}}{% endif %} to the login page!</h1>
+	<form method ="POST" action="/login">
+       <!-- <div class="container">
 
-	<form>
-        <div class="container">
+            <input type="text" placeholder="Enter Username" name="username" required>
 
-            <input type="email" placeholder="Enter Email" name="email" required>
-
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <!--Add js to verify login and then allow the user to go to the deck page-->
-            <button type="submit" >Login</button>
+            <input type="password" placeholder="Enter Password" name="password" required>-->
+       <!--Add js to verify login and then allow the user to go to the deck page-->
+          <!--  <button type="submit" action={{form.submit}}>Login</button>-->
             <!--The register page has a place holder of #. Once ready this will take the user to the register page.-->
-            <button onclick="window.location.href = 'register.html'" type="button" class="register"> Register</button>
-
+            <!--<button onclick="window.location.href = '#'" type="button" class="register"> Register</button>-->
+            <div class="form-field">{{ form.email.label }} {{ form.email }}
+                {% if form.email.errors %}
+                <ul class="errors">
+                    {% for error in form.email.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="form-field">{{ form.password.label }} {{ form.password }}
+                {% if form.password.errors %}
+                <ul class="errors">
+                    {% for error in form.password.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <button id="submit" action={{form.submit}}Submit</button>
         </div>
     </form>
 

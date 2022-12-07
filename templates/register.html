@@ -17,7 +17,7 @@ button {
 }
 
 html {
-  background-image: url('deck_background.png');
+  background-image: url('static/background.jpg');
   background-size: cover;
 }
 
@@ -28,7 +28,7 @@ input::placeholder {
 input[type=text], input[type=password] {
         width: 100%;
         margin: 8px 0;
-        padding: 12px 18px;
+        padding: 12px 20px;
         display: inline-block;
         border: 2px solid green;
         box-sizing: border-box;
@@ -45,20 +45,18 @@ button:hover {
 }
 
 
-.container2 {
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-color: white;
-    padding: 65px;
 }
 
 .aligncenter {
     text-align: center;
-    padding: 0px;
+    padding: 75px;
 }
 
 </style>
@@ -66,26 +64,72 @@ button:hover {
 <body>
 <div>
 <header>
-
+			<!--<h1 class="aligncenter">Welcome!</h1>-->
 </header>
 </div>
+<p class="aligncenter">
+    <img src="static/logo.png" alt="UNCC PropPark" width="350" height="250"/>
+</p>
+<h1>Welcome {% if user %}{{user}}{% endif %} to the register page!</h1>
+<form class="registration" method="POST" action="/register">
 
-<form>
-
-    <div class="container2">
-
-        <input type="text" placeholder="Enter First Name" name="firstname" required>
-
-        <input type="text" placeholder="Enter Last Name" name="lastname" required>
-
-        <input type="password" placeholder="Enter Password" name="password" required>
-
-        <input type="password" placeholder="Confirm Password" name="password" required>
-
-        <button onclick="window.location.href = '#'" type="submit" >Register</button>
-
+    <div class="form-field"><strong>{{ form.firstname.label }} {{ form.firstname }}</strong>
+        {% if form.firstname.errors %}
+        <ul class="errors">
+            {% for error in form.firstname.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
     </div>
+    <div class="form-field"><strong>{{ form.lastname.label }} {{ form.lastname }}</strong>
+        {% if form.lastname.errors %}
+        <ul class="errors">
+            {% for error in form.lastname.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <div class="form-field"><strong>{{ form.email.label }} {{ form.email }}</strong>
+        {% if form.email.errors %}
+        <ul class="errors">
+            {% for error in form.email.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <div class="form-field"><strong>{{ form.password.label }} {{ form.password }}</strong>
+        {% if form.password.errors %}
+        <ul class="errors">
+            {% for error in form.password.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <div class="form-field"><strong>{{ form.confirmPassword.label }} {{ form.confirmPassword }}</strong>
+        {% if form.confirmPassword.errors %}
+        <ul class="errors">
+            {% for error in form.confirmPassword.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <div class="form-field"><strong>{{ form.passtype.label }} {{ form.passtype }}</strong>
+        {% if form.passtype.errors %}
+        <ul class="errors">
+            {% for error in form.passtype.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    {{ form.submit }}
 </form>
 
+</div>
 </body>
 </html>
