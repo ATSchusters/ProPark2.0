@@ -25,7 +25,7 @@ input::placeholder {
   font-size: 18px;
 }
 
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password] {
         width: 100%;
         margin: 8px 0;
         padding: 12px 18px;
@@ -45,13 +45,15 @@ button:hover {
 }
 
 
-.container {
+.container2 {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    padding: 65px;
 }
 
 .aligncenter {
@@ -64,27 +66,26 @@ button:hover {
 <body>
 <div>
 <header>
-			<!--<h1 class="aligncenter">Welcome!</h1>-->
+
 </header>
 </div>
-<p class="aligncenter">
-    <img src="logo2.png" alt="UNCC PropPark" width="450" height="450"/>
-</p>
 
-	<form>
-        <div class="container">
+<form>
 
-            <input type="email" placeholder="Enter Email" name="email" required>
+    <div class="container2">
 
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <!--Add js to verify login and then allow the user to go to the deck page-->
-            <button type="submit" >Login</button>
-            <!--The register page has a place holder of #. Once ready this will take the user to the register page.-->
-            <button onclick="window.location.href = 'register.html'" type="button" class="register"> Register</button>
+        <input type="text" placeholder="Enter First Name" name="firstname" required>
 
-        </div>
-    </form>
+        <input type="text" placeholder="Enter Last Name" name="lastname" required>
 
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <input type="password" placeholder="Confirm Password" name="password" required>
+
+        <button onclick="window.location.href = '#'" type="submit" >Register</button>
+
+    </div>
+</form>
 
 </body>
 </html>
