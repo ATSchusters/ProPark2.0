@@ -18,6 +18,8 @@ class RegisterForm(FlaskForm):
         Email(message='Not a valid email address.'),
         DataRequired()])
 
+    passtype = StringField('Passtype', validators=[Length(1,10)])
+
     password = PasswordField('Password', [
         DataRequired(message="Please enter a password."),
         EqualTo('confirmPassword', message='Passwords must match')

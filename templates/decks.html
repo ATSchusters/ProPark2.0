@@ -19,15 +19,15 @@
                         <a href="{{ url_for('display_schedule') }}">Schedule</a>
                         <a href="{{ url_for('display_settings') }}">Settings</a>
 
-                  <!-- {% if user %}-->
+                   {% if user %}
 
-                        <a class="split" href="{{ url_for('logout')}}">Logout</a>
+                        <a class="split" href="{{ url_for('logout') }}">Logout</a>
 
-                   <!--{% else %}-->
+                   {% else %}
 
                         <a class="split" href="{{ url_for('login') }}">Sign In</a>
                         <a class="split" href="{{ url_for('register') }}">Register</a>
-                    <!--{% endif %}-->
+                    {% endif %}
             </nav>
         </div>
         </header>
