@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8fdc19f-02ce-4ced-8eea-a84e35541af0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/backend.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/backend.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/deck_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/deck_background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/download.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/download.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front end.avif" beforeDir="false" afterPath="$PROJECT_DIR$/static/front end.avif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/logo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pro man.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pro man.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/web dev.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/web dev.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/web.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/web.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webscrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscrap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/propark_database.db" beforeDir="false" afterPath="$PROJECT_DIR$/propark_database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/decks.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/decks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,27 +96,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Webscrap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Capstone" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Red Wraith\AppData\Local\Programs\Python\Python38\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Webscrap.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,10 +159,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="webscrap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capstone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Red Wraith\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="S:\Documents\GitHub\ProPark2.0\webscrap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.Webscrap" />
+        <item itemvalue="Python.webscrap" />
         <item itemvalue="Python.Scratch (1)" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.Scratch" />
@@ -314,18 +309,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="62" y="119" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670449323875" />
-    <state x="3068" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1670448157343">
+    <state x="3068" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1670527653381">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="3068" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668795904826" />
+    <state x="3068" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670527653381" />
     <state x="3068" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1670448157343" />
     <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668796017176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668796017176" />
-    <state x="1034" y="0" width="892" height="669" key="dock-window-1" timestamp="1668785862584">
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1670529004053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1034" y="0" width="892" height="669" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668785862584" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670529004053" />
   </component>
 </project>

@@ -2,7 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
+from database import db
 import time
+
 # creates an options object so we can mess with chromes settings
 options = webdriver.ChromeOptions()
 
@@ -22,9 +24,9 @@ driver.get(url)
 # This grabs the tab which contains the information we want
 elements = driver.find_elements(By.CLASS_NAME, 'mat-list-item-content')
 
-list = []
+combine = []
 # for loop to get the numbers and deck name
 for title in elements:
-   number = title.find_element(By.TAG_NAME, 'app-percentage').text
-   name = title.find_element(By.CLASS_NAME, 'deck-name').text
-   list.append([number, name])
+    percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
+    deck = title.find_element(By.CLASS_NAME, 'deck-name').text
+    combine.append([percentage, deck])

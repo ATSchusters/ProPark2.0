@@ -59,3 +59,13 @@ class Building(db.Model):
         self.coord_x = coord_x
         self.coord_y = coord_y
         self.name = name
+
+
+class Capacity(db.Model):
+    id = db.Column('id', db.Integer, primary_key=True)
+    percent = db.Column('coord_x', db.String(4))
+    name = db.Column('name', db.String(30))
+
+    def __init__(self, percent, name):
+        self.percent = percent
+        self.name = name
