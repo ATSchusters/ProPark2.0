@@ -5,28 +5,31 @@ from webdriver_manager.chrome import ChromeDriverManager
 from database import db
 import time
 
-# creates an options object so we can mess with chromes settings
-options = webdriver.ChromeOptions()
 
-# Makes the tab hidden
-options.headless = True
+def scrap():
+    # creates an options object so we can mess with chromes settings
+    options = webdriver.ChromeOptions()
 
-# URL of the website to be scrapped
-url = 'https://parkingavailability.charlotte.edu/'
+    # Makes the tab hidden
+    options.headless = True
 
-# This is what scrapes the page
-driver = webdriver.Chrome(service=ChromeService(
-    ChromeDriverManager().install()), options=options)
+    # URL of the website to be scrapped
+    url = 'https://parkingavailability.charlotte.edu/'
 
-# Commands the driver to the appropriate url
-driver.get(url)
+    # This is what scrapes the page
+    driver = webdriver.Chrome(service=ChromeService(
+        ChromeDriverManager().install()), options=options)
 
-# This grabs the tab which contains the information we want
-elements = driver.find_elements(By.CLASS_NAME, 'mat-list-item-content')
+    # Commands the driver to the appropriate url
+    driver.get(url)
 
-combine = []
-# for loop to get the numbers and deck name
-for title in elements:
-    percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
-    deck = title.find_element(By.CLASS_NAME, 'deck-name').text
-    combine.append([percentage, deck])
+    # This grabs the tab which contains the information we want
+    elements = driver.find_elements(By.CLASS_NAME, 'mat-list-item-content')
+
+    combine = []
+    # for loop to get the numbers and deck name
+    for title in elements:
+        percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
+        deck = title.find_element(By.CLASS_NAME, 'deck-name').text
+        combine.append([percentage, deck])
+    return combine

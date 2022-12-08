@@ -7,10 +7,7 @@ from models import User as User
 from models import Event as Event
 from models import Deck as Deck
 from forms import RegisterForm, LoginForm
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
+import webscrap
 
 app = Flask(__name__)
 
@@ -96,6 +93,7 @@ def logout():
 # Route to display all decks with no filter to the user
 @app.route('/decks/', methods=['GET', 'POST'])
 def show_decks():
+        test = webscrap.scrap()
         if request.method == 'POST':
                 # gather data posted from form on decks.html
                 deck_filter = request.form['filter']
@@ -114,6 +112,7 @@ def show_decks():
                         return render_template("decks.html", user=session['user'], decks=display_decks)
                 else:
                         return render_template("decks.html", decks=display_decks)
+
 
 # Route to show decks when users have selected a filter and pass type
 @app.route('/decks/<filter>/<passtype>', methods=['GET', 'POST'])
@@ -162,34 +161,6 @@ def display_settings():
         else:
                 return render_template("settings.html")
 
-
-def webscrapping():
-    # creates an options object so we can mess with chromes settings
-    options = webdriver.ChromeOptions()
-
-    # Makes the tab hidden
-    options.headless = True
-
-    # URL of the website to be scrapped
-    url = 'https://parkingavailability.charlotte.edu/'
-
-    # This is what scrapes the page
-    driver = webdriver.Chrome(service=ChromeService(
-        ChromeDriverManager().install()), options=options)
-
-    # Commands the driver to the appropriate url
-    driver.get(url)
-
-    # This grabs the tab which contains the information we want
-    elements = driver.find_elements(By.CLASS_NAME, 'mat-list-item-content')
-
-    combine = []
-    # for loop to get the numbers and deck name
-    for title in elements:
-        percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
-        deck = title.find_element(By.CLASS_NAME, 'deck-name').text
-        combine.append([percentage, deck])
-    return combine
 
 if __name__ == "__main__":
     app.run()
