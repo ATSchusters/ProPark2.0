@@ -23,7 +23,12 @@ with app.app_context():
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+        if session.get('user'):
+                return render_template("index.html", user=session['user'])
+
+        else:
+                return render_template("index.html")
+
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
