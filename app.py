@@ -6,6 +6,7 @@ from database import db
 from models import User as User
 from models import Event as Event
 from models import Deck as Deck
+from models import Building as Building
 from forms import RegisterForm, LoginForm
 
 
@@ -102,14 +103,76 @@ def sort_decks_by_location():
     return render_template("index.html")
 
 
-@app.route('/schedule', methods=['GET'])
+@app.route('/schedule')
 def display_schedule():
+<<<<<<< Updated upstream
     return render_template("schedule.html")
+=======
+        if session.get('user'):
+            my_events = db.session.query(Event).filter_by(user_id=session['user_id'])
+            return render_template("UserSchedule.html", user=session['user'], event=my_events, user_id=session['user_id'])
+        else:
+            return render_template("schedule.html")
+>>>>>>> Stashed changes
 
+@app.route('/schedule/<event_id>', methods=['GET'])
+def get_event(event_id):
+    if session.get('user'):
+        my_event = db.session.query(Event).filter_by(id=event_id).one()
+        return render_template('building.html', event=my_event, user=session['user'])
+
+
+@app.route('/schedule/create', methods=['GET', 'POST'])
+def create():
+        if session.get('user'):
+            #form = ScheduleForm()
+            if request.method == 'GET':
+                return render_template('create.html', user=session['user'])
+
+            if request.method == 'POST':
+                location = request.form['location']
+                time = request.form['time']
+                event = Event(location, session['user_id'], time, 0)
+                db.session.add(event)
+                db.session.commit()
+                return redirect('/schedule')
+            else:
+                return render_template("create.html")
+
+        else:
+            return redirect('/schedule')
+
+@app.route('/schedule/edit/<event_id>', methods=['GET', 'POST'])
+def edit_event(event_id):
+    if request.method == 'POST':
+        location = request.form['location']
+        time = request.form['time']
+        event = db.session.query(Event).filter_by(id=event_id).one()
+
+        event.location=location
+        event.time=time
+
+        db.session.add(event)
+        db.session.commit()
+
+        return redirect('/schedule')
+    else:
+        my_event = db.session.query(Event).filter_by(id=event_id).one()
+        return render_template('create.html', event=my_event)
+
+@app.route('/schedule/delete/<event_id>', methods=['POST'])
+def delete_event(event_id):
+    my_event = db.session.query(Event).filter_by(id=event_id).one()
+    db.session.delete(my_event)
+    db.session.commit()
+
+    return redirect('/schedule')
+        
 
 @app.route('/settings', methods=['GET'])
 def display_settings():
     return render_template("settings.html")
+
 
 
 if __name__ == "__main__":

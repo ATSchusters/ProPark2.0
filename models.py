@@ -19,10 +19,10 @@ class User(db.Model):
 
 class Event(db.Model):
     id = db.Column('id', db.Integer, primary_key=True)
-    user_id = db.Column('user_id', db.Integer)
+    user_id = db.Column('user_id', db.Integer, nullable=True)
     location = db.Column('location', db.String(50))
     time = db.Column('time', db.Integer)
-    recurring = db.Column('recurring', db.String(10))
+    recurring = db.Column('recurring', db.String(10), nullable=True)
 
     def __init__(self, location, user_id, time, recurring):
         self.location = location
@@ -47,3 +47,31 @@ class Deck(db.Model):
         self.commuter = commuter
         self.resident = resident
         self.staff = staff
+<<<<<<< Updated upstream
+=======
+
+
+class Building(db.Model):
+    id = db.Column('id', db.Integer, primary_key=True)
+    coord_x = db.Column('coord_x', db.Float)
+    coord_y = db.Column('coord_y', db.Float)
+    name = db.Column('name', db.String(30))
+    time = db.Column('time', db.String(30))
+
+    def __init__(self, coord_x, coord_y, name, time):
+        self.coord_x = coord_x
+        self.coord_y = coord_y
+        self.name = name
+        self.time = time
+
+
+
+class Capacity(db.Model):
+    id = db.Column('id', db.Integer, primary_key=True)
+    percent = db.Column('coord_x', db.String(4))
+    name = db.Column('name', db.String(30))
+
+    def __init__(self, percent, name):
+        self.percent = percent
+        self.name = name
+>>>>>>> Stashed changes

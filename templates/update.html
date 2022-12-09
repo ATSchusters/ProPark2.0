@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <body style="background-color:rgb(193, 195, 196);"></body>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="UNCC ProPark">
@@ -18,26 +19,21 @@
                   <a href="{{ url_for('display_schedule') }}">Schedule</a>
                   <a href="{{ url_for('display_settings') }}">Settings</a>
 
-<<<<<<< Updated upstream
-            <!-- {% if user %}-->
-
-=======
             {% if user %}
-                  <a class="split" href="{{ url_for('create')}}">Add to Schedule</a>
->>>>>>> Stashed changes
-                  <a class="split" href="{{ url_for('logout')}}">Logout</a>
-                  
 
-             <!--{% else %}-->
+                  <a class="split" href="{{ url_for('logout')}}">Logout</a>
+
+            {% else %}
 
                   <a class="split" href="{{ url_for('login') }}">Sign In</a>
                   <a class="split" href="{{ url_for('register') }}">Register</a>
-              <!--{% endif %}-->
+              {% endif %}
             </nav>
         </div>
+    <h2>Edit Your building</h2>
 
-        <h1>Schedule page</h1>
-        
-        <p>In order to see or create a schedule you must first Login. If you're already logged in click Add to schedule.
-        </p>
-       
+<form action='' method = "POST">
+    <p>Time <input type = "quantity" name = "time" value="{{event.time}}"/></p>
+    <p>Location <input type = "text" name = "location" value="{{event.location}}"/></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>

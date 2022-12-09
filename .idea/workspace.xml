@@ -10,8 +10,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/propark_database.db" beforeDir="false" afterPath="$PROJECT_DIR$/propark_database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/templates/decks.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/decks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webscrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscrap.py" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +59,11 @@
       <recent name="C:\Users\Red Wraith\Documents\GitHub\ProPark2.0" />
     </key>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="Python.test">
+=======
+  <component name="RunManager" selected="Python.models">
+>>>>>>> Stashed changes
     <configuration name="Scratch (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +106,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="Webscrap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+>>>>>>> Stashed changes
       <module name="Capstone" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +122,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< Updated upstream
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Webscrap.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models.py" />
+>>>>>>> Stashed changes
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +200,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
+=======
+        <item itemvalue="Python.models" />
+        <item itemvalue="Python.webscrap (1)" />
+>>>>>>> Stashed changes
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Webscrap" />
         <item itemvalue="Python.Scratch (1)" />
+<<<<<<< Updated upstream
         <item itemvalue="Python.app" />
         <item itemvalue="Python.Scratch" />
+=======
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +311,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1202" y="280" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668739122844" />
+<<<<<<< Updated upstream
     <state width="1040" height="329" key="GridCell.Tab.0.bottom" timestamp="1668791527775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,6 +328,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1040" height="329" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668791527775" />
+=======
+    <state width="1131" height="327" key="GridCell.Tab.0.bottom" timestamp="1670562643613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1131" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670562643613" />
+    <state width="1131" height="327" key="GridCell.Tab.0.center" timestamp="1670562643613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1131" height="327" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670562643613" />
+    <state width="1131" height="327" key="GridCell.Tab.0.left" timestamp="1670562643613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1131" height="327" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670562643613" />
+    <state width="1131" height="327" key="GridCell.Tab.0.right" timestamp="1670562643613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1131" height="327" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670562643613" />
+>>>>>>> Stashed changes
     <state x="112" y="258" key="IDE.errors.dialog" timestamp="1668785964075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,18 +354,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="62" y="119" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670449323875" />
+<<<<<<< Updated upstream
     <state x="3068" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1670448157343">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="3068" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668795904826" />
+=======
+    <state x="3068" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1670559254846">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3068" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670559254846" />
+>>>>>>> Stashed changes
     <state x="3068" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1670448157343" />
     <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668796017176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1251" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668796017176" />
+<<<<<<< Updated upstream
     <state x="1034" y="0" width="892" height="669" key="dock-window-1" timestamp="1668785862584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1034" y="0" width="892" height="669" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1668785862584" />
+=======
+    <state x="-7" y="0" width="779" height="1047" key="dock-window-1" timestamp="1670559629485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="779" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1670559629485" />
+>>>>>>> Stashed changes
   </component>
 </project>

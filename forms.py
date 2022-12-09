@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, TextAreaField
+from wtforms import StringField, PasswordField, SubmitField, TextAreaField, IntegerField
 from wtforms.validators import Length, Regexp, DataRequired, EqualTo, Email
 from wtforms import ValidationError
 from models import User
@@ -51,3 +51,11 @@ class LoginForm(FlaskForm):
     def validate_email(self, field):
         if db.session.query(User).filter_by(email=field.data).count() == 0:
             raise ValidationError('Incorrect username or password.')
+
+#class ScheduleForm(FlaskForm):
+   # class Meta:
+   #     csrf = False
+    
+  #  time = StringField('Time', validators=[Length(1, 10)])
+  #  location = StringField('Name', validators=[Length(1, 10)])
+    
