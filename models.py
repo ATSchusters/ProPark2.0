@@ -40,8 +40,9 @@ class Deck(db.Model):
     resident = db.Column('resident', db.Boolean)
     staff = db.Column('staff', db.Boolean)
     percent = db.Column('percent', db.Integer)
+    distance = db.Column('distance', db.Integer)
 
-    def __init__(self, coord_x, coord_y, name, commuter, resident, staff, percent):
+    def __init__(self, coord_x, coord_y, name, commuter, resident, staff, percent, distance):
         self.coord_x = coord_x
         self.coord_y = coord_y
         self.name = name
@@ -49,6 +50,7 @@ class Deck(db.Model):
         self.resident = resident
         self.staff = staff
         self.percent = percent
+        self.distance = distance
 
 
 class Building(db.Model):
