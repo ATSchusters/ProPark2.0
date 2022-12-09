@@ -46,10 +46,12 @@
                 {% if filter %}
                     <option value={{filter}}>{{filter}}</option>
                 {% endif %}
-                <option value="none">None</option>
-                <option value="closest">Closest</option>
-                <option value="favorite">Favorite</option>
-                <option value="most empty">Most Empty</option>
+
+                {% for build in building %}
+
+                <option value="building">{{ build.name }}</option>
+
+                {% endfor %}
             </select>
             <label for="passtype">Choose a pass type</label>
             <select name="passtype" id="passtype">
