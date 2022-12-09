@@ -93,8 +93,8 @@ def logout():
 # Route to display all decks with no filter to the user
 @app.route('/decks/', methods=['GET', 'POST'])
 def show_decks():
+        # calls the webscrapper
         percent = webscrap.scrap()
-        test = []
 
         if request.method == 'POST':
                 # gather data posted from form on decks.html
@@ -110,10 +110,17 @@ def show_decks():
                 # query and display all decks
                 # retrieves all decks
                 display_decks= db.session.query(Deck).all()
-                #for items in display_decks:
-                 #   for i in range(len(percent)):
-                  #      if percent[i][0] == items.name:
-                   #         test.append(percent[i][1])
+
+                # for loop to iterate through the decks
+                # second for loops iterates through the number of decks
+                for items in display_decks:
+                    for i in range(len(percent)):
+                        # this checks if which value scraped connected to which deck
+                        if percent[i][0] == items.name:
+                            # this sets the percent value in the database to the new value
+                            items.percent = percent[i][1]
+                # commits it to be later called by the database
+                db.session.commit()
                 if session.get('user'):
                         return render_template("decks.html", user=session['user'], decks=display_decks)
                 else:
@@ -123,6 +130,8 @@ def show_decks():
 # Route to show decks when users have selected a filter and pass type
 @app.route('/decks/<filter>/<passtype>', methods=['GET', 'POST'])
 def display_filtered_decks(filter, passtype):
+        # calls the webscrapper
+        percent = webscrap.scrap()
 
         # if user submits a filter from form
         if request.method == 'POST':
@@ -143,6 +152,17 @@ def display_filtered_decks(filter, passtype):
                         filtered_decks = db.session.query(Deck).filter_by(staff=True)
                 else:
                         filtered_decks = db.session.query(Deck).all()
+
+        # for loop to iterate through the decks
+        # second for loops iterates through the number of decks
+        for items in filtered_decks:
+            for i in range(len(percent)):
+                # this checks if which value scraped connected to which deck
+                if percent[i][0] == items.name:
+                    # this sets the percent value in the database to the new value
+                    items.percent = percent[i][1]
+        # commits it to be later called by the database
+        db.session.commit()
 
         # if a user is logged in, render decks.html with user and decks
         if session.get('user'):
