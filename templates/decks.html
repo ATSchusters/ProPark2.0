@@ -43,6 +43,9 @@
         <form class="filter" action="{{ url_for('show_decks') }}" method="post">
             <label for="filter">Choose a filter</label>
             <select name="filter" id="filter">
+                {% if filter %}
+                    <option value={{filter}}>{{filter}}</option>
+                {% endif %}
                 <option value="none">None</option>
                 <option value="closest">Closest</option>
                 <option value="favorite">Favorite</option>
@@ -50,6 +53,9 @@
             </select>
             <label for="passtype">Choose a pass type</label>
             <select name="passtype" id="passtype">
+                {% if passtype %}
+                    <option value={{passtype}}>{{passtype}}</option>
+                {% endif %}
                 <option value="all">All</option>
                 <option value="commuter">Commuter</option>
                 <option value="faculty">Faculty/Staff</option>

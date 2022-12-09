@@ -102,9 +102,6 @@ def show_decks():
                 deck_passtype = request.form['passtype']
 
                 # redirect user to filtered decks page
-                #if session.get('user'):
-                        #return redirect(url_for('display_filtered_decks', user=session['user'], filter=deck_filter, passtype=deck_passtype))
-               # else:
                 return redirect(url_for('display_filtered_decks', filter=deck_filter, passtype=deck_passtype))
         else:
                 # query and display all decks
@@ -166,11 +163,11 @@ def display_filtered_decks(filter, passtype):
 
         # if a user is logged in, render decks.html with user and decks
         if session.get('user'):
-                return render_template('decks.html', decks=filtered_decks, user=session['user'])
+                return render_template('decks.html', decks=filtered_decks, user=session['user'], filter=filter, passtype=passtype)
 
         # if no user is logged in, render decks.html with decks
         else:
-                return render_template('decks.html', decks=filtered_decks)
+                return render_template('decks.html', decks=filtered_decks, filter=filter, passtype=passtype)
 
 @app.route('/schedule', methods=['GET'])
 def display_schedule():
