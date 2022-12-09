@@ -93,7 +93,9 @@ def logout():
 # Route to display all decks with no filter to the user
 @app.route('/decks/', methods=['GET', 'POST'])
 def show_decks():
-        test = webscrap.scrap()
+        percent = webscrap.scrap()
+        test = []
+
         if request.method == 'POST':
                 # gather data posted from form on decks.html
                 deck_filter = request.form['filter']
@@ -108,6 +110,10 @@ def show_decks():
                 # query and display all decks
                 # retrieves all decks
                 display_decks= db.session.query(Deck).all()
+                #for items in display_decks:
+                 #   for i in range(len(percent)):
+                  #      if percent[i][0] == items.name:
+                   #         test.append(percent[i][1])
                 if session.get('user'):
                         return render_template("decks.html", user=session['user'], decks=display_decks)
                 else:

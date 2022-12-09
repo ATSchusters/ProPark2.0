@@ -29,7 +29,7 @@ def scrap():
     combine = []
     # for loop to get the numbers and deck name
     for title in elements:
-        percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
         deck = title.find_element(By.CLASS_NAME, 'deck-name').text
-        combine.append([percentage, deck])
+        percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
+        combine.append([deck, percentage])
     return combine
