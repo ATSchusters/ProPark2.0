@@ -39,7 +39,7 @@ class Deck(db.Model):
     commuter = db.Column('commuter', db.Boolean)
     resident = db.Column('resident', db.Boolean)
     staff = db.Column('staff', db.Boolean)
-    percent = db.Column('percent', db.String(4))
+    percent = db.Column('percent', db.Integer)
 
     def __init__(self, coord_x, coord_y, name, commuter, resident, staff, percent):
         self.coord_x = coord_x

@@ -32,4 +32,7 @@ def scrap():
         deck = title.find_element(By.CLASS_NAME, 'deck-name').text
         percentage = title.find_element(By.TAG_NAME, 'app-percentage').text
         combine.append([deck, percentage])
+
+    for i in range(len(combine)):
+        combine[i][1] = int(combine[i][1].strip('%'))
     return combine
