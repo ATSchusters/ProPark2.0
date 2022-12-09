@@ -69,10 +69,17 @@
             {% for deck in decks %}
             <li class="decks">{{ deck.name }}<div class="circle_container">
                 <button><a href="https://maps.google.com/?q={{deck.coord_x}},{{deck.coord_y}}">Go</a></button>
-                <div class="circle_main">
+                {% if deck.percent >=50 %}
+                    <div class="circle_full">
+                {% elif deck.percent >= 25 %}
+                    <div class="circle_meduim">
+                {% else %}
+                    <div class="circle_meduim">
+                {% endif %}
+
                     <div class="circle_text_container">
                         <div class = "circle_text">
-                            {{ deck.percent }}
+                            {{ deck.percent }}%
                         </div>
                     </div>
                 </div></li><br>
