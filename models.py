@@ -47,8 +47,6 @@ class Deck(db.Model):
         self.commuter = commuter
         self.resident = resident
         self.staff = staff
-<<<<<<< Updated upstream
-=======
 
 
 class Building(db.Model):
@@ -74,4 +72,3 @@ class Capacity(db.Model):
     def __init__(self, percent, name):
         self.percent = percent
         self.name = name
->>>>>>> Stashed changes

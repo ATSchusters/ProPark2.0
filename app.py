@@ -105,15 +105,11 @@ def sort_decks_by_location():
 
 @app.route('/schedule')
 def display_schedule():
-<<<<<<< Updated upstream
-    return render_template("schedule.html")
-=======
         if session.get('user'):
             my_events = db.session.query(Event).filter_by(user_id=session['user_id'])
             return render_template("UserSchedule.html", user=session['user'], event=my_events, user_id=session['user_id'])
         else:
             return render_template("schedule.html")
->>>>>>> Stashed changes
 
 @app.route('/schedule/<event_id>', methods=['GET'])
 def get_event(event_id):
