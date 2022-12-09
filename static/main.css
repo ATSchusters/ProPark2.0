@@ -73,7 +73,7 @@ body{
 }
 
 /* Circle Main draws the actual circle for percentage */
-.circle_main
+.circle_full
 {
 	width : 90%;
 	height : 90%;
@@ -81,7 +81,32 @@ body{
 	border : 2px solid black;
 	margin : 0;
 	padding : 0;
-    background-color: #86DC3D;
+    background-color: #6fd714;
+
+    
+}
+
+.circle_medium
+{
+	width : 90%;
+	height : 90%;
+	border-radius : 50%;
+	border : 2px solid black;
+	margin : 0;
+	padding : 0;
+    background-color: #ceeb40;
+
+    
+}
+.circle_empty
+{
+	width : 90%;
+	height : 90%;
+	border-radius : 50%;
+	border : 2px solid black;
+	margin : 0;
+	padding : 0;
+    background-color: #dc3d3d;
 
     
 }
