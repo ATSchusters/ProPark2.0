@@ -35,12 +35,13 @@
 
         {% if user %}
         <h1>Schedule page</h1>
-        <h1>hello {{user}} See schedule below</h1>
+        <h2>hello {{user}} See schedule below. Click the schedule block to make changes</h2>
         {% for event in event %}
        <ul>
-       <button><a href="{{ url_for('get_event', event_id=event.id) }}"> <li class="building_list">{{event.location}} <br> {{event.time}}</li></a></button>
+       <button class="scheduleButton"><a href="{{ url_for('get_event', event_id=event.id) }}"> <li class="building_list">{{event.location}} <br> {{event.time}}</li></a></button>
       </ul>
         {% endfor %}
-        {% endif %}
+        {% else %}
         <p>In order to see or create a schedule you must first Login. If you're already logged in click Add to schedule.
         </p>
+        {% endif %}
